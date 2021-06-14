@@ -27,9 +27,9 @@
 .App .circle {
   display: block;
   margin: 0;
-  height: 40rem;
-  width: 40rem;
-  background-color: #cddfed;
+  height: 65vh;
+  width: 65vh;
+  background-color: #cddfeda2;
   backdrop-filter: blur(5px);
   border-radius: 50%;
   font-family: "Courier New", Courier, monospace;
@@ -44,12 +44,61 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 38rem;
-  width: 38rem;
+  height: 63vh;
+  width: 63vh;
 }
 
 .App .circle h1 {
+  margin: 0;
   font-weight: bold;
   font-size: 5rem;
-  padding-top: 8rem;
+  padding-top: 9rem;
+}
+
+.App .circle h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.App .circle h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding-top: 15vh;
+}
+
+.App .circle p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+.App .circle .text-input {
+  border: none;
+  background-color: #b5d4ec;
+  margin-top: 1rem;
+  height: 2rem;
+  width: 11rem;
+  border-radius: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  color: #11416d;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.App .circle .text-input:focus {
+  outline: none;
+}
+
+.App .circle .button {
+  border: none;
+  height: 2rem;
+  border-radius: 20px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: #cddfed;
+  background-color: #11416d;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
 }
