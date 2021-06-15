@@ -1,3 +1,14 @@
+@font-face {
+  font-family: Ariq;
+  src: url("./fonts/Ariq.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Ariq;
+  font-weight: bold;
+  src: url("./fonts/Ariq.otf") format("opentype");
+}
+
 .App {
   height: 100vh;
   position: relative;
@@ -16,8 +27,8 @@
 .App .background {
   display: block;
   margin: 0;
-  height: 80vh;
-  width: 80vw;
+  height: 90vh;
+  width: 90vw;
   background-image: url("./images/stitch-flowers.png");
   background-position: center;
   background-size: contain;
@@ -50,8 +61,9 @@
 
 .App .circle h1 {
   margin: 0;
+  font-family: Ariq;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 7rem;
   padding-top: 9rem;
 }
 
@@ -63,7 +75,7 @@
 .App .circle h3 {
   font-size: 1.5rem;
   margin: 0;
-  padding-top: 15vh;
+  padding-top: 12vh;
 }
 
 .App .circle p {
@@ -101,4 +113,61 @@
   background-color: #11416d;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
+}
+
+.dark.App {
+  background-color: #061727;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 4rem;
+  height: 2rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #11416d;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  left: 0.25rem;
+  bottom: 0.25rem;
+  background-color: #b5d4ec;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #b5d4ec;
+}
+
+input:checked + .slider:before {
+  transform: translateX(2rem);
+  background-color: #11416d;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

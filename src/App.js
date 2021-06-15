@@ -3,6 +3,10 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
+      <label className="switch">
+        <input type="checkbox" />
+        <span className="slider round"></span>
+      </label>
       <div className="background">
         <div className="circle">
           <div className="stitches">
