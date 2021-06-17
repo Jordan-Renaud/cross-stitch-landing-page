@@ -194,7 +194,7 @@ input:checked + .slider:before {
 1025px — 1200px: Desktops, large screens.
 1201px and more — Extra large screens, TV. */
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .App .background {
     background-image: url("./images/stitch-flowers-light-verticle.png");
   }
@@ -203,19 +203,34 @@ input:checked + .slider:before {
     background-image: url("./images/stitch-flowers-dark-verticle.png");
   }
 
+  .App .circle {
+    height: 90vw;
+    width: 90vw;
+  }
+
+  .App .stitches {
+    height: 88vw;
+    width: 88vw;
+  }
+
   .App h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     padding-top: 3rem;
   }
 
   .App h2,
   .App h3 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .App p {
     font-size: 0.6rem;
     padding-top: 0.5rem;
+  }
+
+  .mode-switch {
+    position: relative;
+    top: 80vh;
   }
 
   .switch {
