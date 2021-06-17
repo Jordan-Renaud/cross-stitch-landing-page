@@ -33,7 +33,12 @@ function App() {
 
           <form className="email-form">
             <label>
-              <input className="text-input" type="email" email="email" />
+              <input
+                className="text-input"
+                type="email"
+                email="email"
+                placeholder="email..."
+              />
             </label>
             <input className="button" type="submit" value="scratch" />
           </form>

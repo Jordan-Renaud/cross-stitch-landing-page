@@ -45,6 +45,15 @@
   opacity: 0;
 }
 
+.App .dark-flowers {
+  display: block;
+  margin: 0;
+  height: 90vh;
+  width: 90vw;
+  background: url("./images/stitch-flowers-dark.png") no-repeat center;
+  background-size: contain;
+}
+
 .App .circle {
   display: block;
   height: 65vh;
@@ -179,11 +188,65 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.App .dark-flowers {
-  display: block;
-  margin: 0;
-  height: 90vh;
-  width: 90vw;
-  background: url("./images/stitch-flowers-dark.png") no-repeat center;
-  background-size: contain;
+/* 320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV. */
+
+@media (max-width: 320px) {
+  .App .background {
+    background-image: url("./images/stitch-flowers-light-verticle.png");
+  }
+
+  .App .dark-flowers {
+    background-image: url("./images/stitch-flowers-dark-verticle.png");
+  }
+
+  .App h1 {
+    font-size: 3rem;
+    padding-top: 3rem;
+  }
+
+  .App h2,
+  .App h3 {
+    font-size: 0.7rem;
+  }
+
+  .App p {
+    font-size: 0.6rem;
+    padding-top: 0.5rem;
+  }
+
+  .switch {
+    top: 1rem;
+    width: 2rem;
+    height: 1rem;
+  }
+
+  .slider:before {
+    height: 0.8rem;
+    width: 0.8rem;
+    left: 0.1rem;
+    bottom: 0.1rem;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(1rem);
+  }
+
+  .App .text-input {
+    margin-top: 0.5rem;
+    height: 1rem;
+    width: 8rem;
+    padding: 0 0.3rem;
+    font-size: 0.5rem;
+  }
+
+  .App .button {
+    height: 1rem;
+    margin: 0.5rem;
+    padding: 0.2rem;
+    font-size: 0.5rem;
+  }
 }
