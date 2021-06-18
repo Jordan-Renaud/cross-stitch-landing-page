@@ -25,7 +25,9 @@ function App() {
       <div className="background"></div>
 
       <div className="circle">
-        <div className="stitches">
+        <div className="stitches"></div>
+
+        <div className="content">
           <h1>Stitch Itch</h1>
           <h2>It's like tinder for cross stitch.</h2>
           <h3>You know you want to scratch</h3>

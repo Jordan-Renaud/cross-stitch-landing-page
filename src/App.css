@@ -60,9 +60,6 @@
   width: 65vh;
   background-color: #cddfeda2;
   border-radius: 50%;
-  font-family: "Courier New", Courier, monospace;
-  color: #11416d;
-  text-align: center;
 }
 
 .App .stitches {
@@ -72,10 +69,16 @@
   background-size: contain;
   height: 63vh;
   width: 63vh;
+}
+
+.App .content {
+  font-family: "Courier New", Courier, monospace;
+  color: #11416d;
+  text-align: center;
   transition: color ease-in-out 1s;
 }
 
-.dark.App .stitches {
+.dark.App .content {
   color: #cddfed;
 }
 
@@ -194,7 +197,16 @@ input:checked + .slider:before {
 1025px — 1200px: Desktops, large screens.
 1201px and more — Extra large screens, TV. */
 
-@media (max-width: 375px) {
+@media (max-width: 639px) {
+  .App {
+    max-height: -webkit-fill-available;
+    overflow: hidden;
+  }
+
+  html {
+    height: -webkit-fill-available;
+  }
+
   .App .background {
     background-image: url("./images/stitch-flowers-light-verticle.png");
   }
@@ -230,24 +242,8 @@ input:checked + .slider:before {
 
   .mode-switch {
     position: relative;
-    top: 80vh;
-  }
-
-  .switch {
-    top: 1rem;
-    width: 2rem;
-    height: 1rem;
-  }
-
-  .slider:before {
-    height: 0.8rem;
-    width: 0.8rem;
-    left: 0.1rem;
-    bottom: 0.1rem;
-  }
-
-  input:checked + .slider:before {
-    transform: translateX(1rem);
+    top: 75vh;
+    z-index: 99;
   }
 
   .App .text-input {
