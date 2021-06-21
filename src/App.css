@@ -210,6 +210,7 @@ input:checked + .slider:before {
 1025px — 1200px: Desktops, large screens.
 1201px and more — Extra large screens, TV. */
 
+/* mobile media queries */
 @media (max-width: 639px) {
   .App {
     max-height: -webkit-fill-available;
@@ -233,7 +234,8 @@ input:checked + .slider:before {
     width: 90vw;
   }
 
-  .App .stitches {
+  .App .stitches,
+  .dark.App .stitches {
     height: 88vw;
     width: 88vw;
   }
@@ -255,7 +257,7 @@ input:checked + .slider:before {
 
   .mode-switch {
     position: relative;
-    top: 75vh;
+    top: 80vh;
     z-index: 99;
   }
 
@@ -272,5 +274,24 @@ input:checked + .slider:before {
     margin: 0.5rem;
     padding: 0.2rem;
     font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    max-height: -webkit-fill-available;
+    overflow: hidden;
+  }
+
+  html {
+    height: -webkit-fill-available;
+  }
+
+  .App .background {
+    background-image: url("./images/stitch-flowers-light-verticle.png");
+  }
+
+  .App .dark-flowers {
+    background-image: url("./images/stitch-flowers-dark-verticle.png");
   }
 }
