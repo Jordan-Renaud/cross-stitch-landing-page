@@ -58,14 +58,27 @@
   display: block;
   height: 65vh;
   width: 65vh;
-  background-color: #cddfeda2;
+  background-color: #cddfedb2;
   border-radius: 50%;
+  transition: background-color ease-in-out 1s;
+}
+
+.dark.App .circle {
+  background-color: #11406da4;
 }
 
 .App .stitches {
   display: block;
   margin: 0 auto;
   background: url("./images/dashed-circle.png") no-repeat center;
+  background-size: contain;
+  height: 63vh;
+  width: 63vh;
+  pointer-events: none;
+}
+
+.dark.App .stitches {
+  background: url("./images/dashed-circle-dark.png") no-repeat center;
   background-size: contain;
   height: 63vh;
   width: 63vh;
